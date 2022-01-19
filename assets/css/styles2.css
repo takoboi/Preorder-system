@@ -1,0 +1,332 @@
+
+/*CSS*/
+
+
+.t-box{
+	width: 75%;
+	background-image: url(assets/img/japanesesea.png); 
+	text-align: center;
+	border-radius: 5px;
+	padding: 20px;
+	
+}
+img.center {
+	position: relative;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.textdesc{
+	font-size:18px;
+}
+
+/*CSS*/
+
+html{
+	scroll-behavior: auto;
+}
+
+body{
+	margin: 3rem 0 0 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.95rem;
+	background-color: #C21121;
+	color: #f7f7f7;
+	
+}
+
+h1,h2,h3,p,h4,ul{
+	margin: 0;		
+}
+
+h2,h3{
+	padding-top: 15px; padding-bottom:15px;
+}
+
+h4{
+	padding-top: 15px; padding-bottom:15px;
+}
+ul{
+	padding: 0;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*========== CLASS CSS ==========*/
+.section{
+	padding: 4rem 0 2rem;
+}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 15px;
+  width: 100%;
+} 
+
+.iframe-container iframe {
+	position: relative;
+	top: 0;
+	left: 0;
+	border: 0;
+	width: 320px;
+	height: 240px;
+}
+
+iframe{
+	text-align:center;
+	display:block;
+	margin:auto;
+	
+}
+
+/*========== LAYOUT ==========*/
+.bd-container{
+	max-width: 960px;
+	width: calc(100% - 2rem);
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.bd-grid{
+	display: grid;
+	gap: 1.5rem;
+}
+
+.headertb{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background-color: #070404;
+}
+
+.containertb{
+	position: relative;
+	width: 100%;
+}
+
+.text-block {
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
+	color: white;
+	padding-left: 2rem;
+	padding-right: 2rem;  
+	margin: 3rem 0 55 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #f7f7f7;
+	line-height: 1rem;
+
+}
+
+.stack-image{
+	
+	display:flex;
+	
+}
+.header2{
+	max-width: 100%;
+	object-fit: fill;
+
+}
+/*========== NAV ==========*/
+.nav{
+	row-gap: 2rem;
+	max-width: 1024px;
+	height: 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 1rem;
+}
+.nav{
+	height: calc(3rem + 1.5rem);
+}
+
+.navlogo{
+	max-height:100%;
+	max-width:100%; 
+}
+
+.section{
+	padding-top: 8rem;
+}
+
+.navlist{
+	display: flex;
+  text-align: center;
+}
+
+.navitem{
+	padding-left: 2.5rem;
+	margin-bottom: 2rem;
+	padding-top: 2rem;
+	font-size: 1vw;
+}
+.navlink, .navtoggle{
+	color: #f7f7f7;
+	font-weight: 500;
+}
+
+.navlink{
+	transition: .3s;
+}
+
+.navlink:hover{
+	color:  #eeeeee;
+}
+
+.navcontact{
+	font-size: 1vw;
+	color: #f7f7f7;
+	margin-right: 0.5rem;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(19, 19, 19);
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/*footer*/
+.footercontainer{
+	background-color: #131313;
+	padding: 1rem 1rem 1rem 1rem;
+	width: 100%;
+	height: auto;
+	padding: 2rem 0 2rem 0;
+}
+
+.footertitle{
+	padding: 0 0 2rem 0;
+	font-size: 1.25rem;
+	color: #f7f7f7;
+	padding-left:5vw;
+	margin-bottom: 1rem;
+	text-align-last:left;
+}
+
+.footerdescription{
+	padding-left:10vw;
+	text-align:left;
+	padding-right:10vw;
+}
+.copyright{
+	padding: 1rem 0 1rem 0;
+	text-align-last: center;
+    background-color:rgb(19, 19, 19);
+	font-size: 13px;
+	vertical-align: middle;
+	width: 100%;
+	
+}
+
+
+
+@media screen and (max-width: 768px){
+	body{
+		margin: 3rem 0 0 0;
+		font-family: 'Open Sans', sans-serif;
+		font-size:0.95rem;
+		background-color: #C21121;
+		color: #f7f7f7;
+	}
+	img.center {
+		padding-top:1.2rem;
+		position: relative;
+		display: block;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width:16vw;
+	}
+	.nav{
+		max-width: 1024px;
+		height: 3rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 1rem;
+	}
+	.nav{
+		height: calc(3rem + 1.5rem);
+	}
+
+	.navlogo{
+		max-height:100%;
+		max-width:100%; 
+	}
+
+	.section{
+		padding-top: 8rem;
+	}
+
+	.navlist{
+		display: flex;
+	  text-align: center;
+	}
+
+	.navitem{
+		padding-left:2.5vw;
+		margin-bottom: 2rem;
+		padding-top: 2rem;
+		font-size: 2.5vw;
+	}
+	.navlink, .navtoggle{
+		color: #f7f7f7;
+		font-weight: 500;
+	}
+
+	.navlink{
+		transition: .3s;
+	}
+
+	.navlink:hover{
+		color:  #eeeeee;
+	}
+
+	.navcontact{
+		font-size: 3vw;
+		color: #f7f7f7;
+		margin-right: 0.5rem;
+	}
+	.textdesc{
+		font-size:3vw;
+	}
+	.stack-image{
+
+	display:inline;
+
+	}
+}
+
+
+

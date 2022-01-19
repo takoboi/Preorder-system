@@ -1,0 +1,145 @@
+/* = STEPS CONTAINER
+----------------------------*/
+.main-nav-holder{
+  width:100%;
+  height:auto;  
+  float:left;
+  margin: 30px 0 20px;
+}
+.wizard-steps {
+	border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 14px;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 2px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.wizard-steps li {
+    float:left;
+}
+/*NORMAL GRAY WIZARD*/
+.wizard-steps li a {
+    background: none repeat scroll 0 0 #e0e0e0;
+    color: #666666;
+    display: block;
+    float: left;    
+    height: 35px;
+    line-height: 34px;
+    margin-right: 14px;
+    padding: 0 10px 0 3px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;    
+    width: 125px;
+}
+/*NORMAL GRAY ARROW LEFT SIDE*/
+.wizard-steps li a:before {
+    border-bottom: 19px solid #e0e0e0;
+    border-left: 12px solid rgba(0, 0, 0, 0);
+    border-top: 16px solid #e0e0e0;
+    content: "";
+    height: 0;
+    left: -12px;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+/*NORMAL GRAY ARROW RIGHT SIDE*/
+.wizard-steps li a:after {
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-left:12px solid #e0e0e0;
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: -12px;
+}
+/*FIRST LIST ITEM DOES NOT NEED THE LEFT SHAPED ATTACHMENT*/
+.wizard-steps li:first-child a {
+    border-left: 0 none !important;
+    border-radius: 10px 0 0 10px !important;
+}
+.wizard-steps li:first-child a:before {
+    border: 0 none !important;    
+}
+/*LAST LIST ITEM DOES NOT NEED RIGHT SHAPE TRIANGLE*/
+.wizard-steps li:last-child a {
+    border-left: 0 none !important;
+    border-radius: 0 10px 10px 0px !important;
+	margin: 0 !important;
+}
+/*NO NEED OF ARROWS ON RIGHT FOR TRIANGLE*/
+.wizard-steps li:last-child a:after{
+   border:none !important;
+}
+ 
+/* = COMPLETED STEPS
+----------------------------*/
+ 
+.wizard-steps .completed-step a {    
+    background: rgb(19, 19, 19);
+}
+.wizard-steps .completed-step a:before {
+    border-top: 16px solid rgb(19, 19, 19);
+    border-bottom: 19px solid rgb(19, 19, 19);
+}
+.wizard-steps .completed-step a:after {
+    border-left: 12px solid rgb(19, 19, 19);
+}
+/* = ACTIVE STEPS
+----------------------------*/
+.wizard-steps .active-step a {    
+    background:#696969 ; 
+	color:#ffffff;	
+}
+ .wizard-steps .active-step a:before {
+    border-bottom: 19px solid #696969;
+    border-top: 16px solid #696969;
+}
+.wizard-steps .active-step a:after {
+    border-left: 12px solid #696969;
+}
+/*****************************IOS BUTTON ********************************************/
+
+.ios-button {
+	display:block;
+	height:30px;
+	width:64px;
+	background:url('../img/back-button.png') no-repeat top left;
+	color:#fff;
+	font-size:13px;
+	text-align: center;
+	line-height: 28px;
+}
+.ios-button:hover,
+.ios-button:focus{
+   text-decoration:none;
+   color:#fff;
+}
+
+.outerwrapper{
+text-align: center;
+  margin:52px
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

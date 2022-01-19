@@ -1,0 +1,62 @@
+body
+{
+	background-color: black;
+}
+
+table
+{
+	border: solid black;
+	border-radius: 6px;
+	background-color: white;
+}
+
+th
+{
+	border: solid black;
+	background-color: maroon;
+	color: white;
+	border-radius: 6px;
+}
+
+td
+{
+	font-weight: bold;
+}
+
+.header
+{
+	background-color: maroon;
+	color: white;
+	border: solid black;
+	border-radius: 6px;
+	font-size: 130%;
+	text-align: center;
+}
+
+.action
+{
+	text-align: center;
+}
+
+input[type=submit], input[type=reset]
+{
+	width: 40%;
+	border-radius: 6px;
+}
+
+input[type=submit]:hover
+{
+	background-color: green;
+	color: white;
+}
+
+input[type=reset]:hover
+{
+	background-color: red;
+	color: white;
+}
+
+input
+{
+	border-radius: 6px;
+}
